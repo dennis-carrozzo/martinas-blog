@@ -23,13 +23,13 @@ export default function Page ({ story }) {
       <Head>
         <title>{story ? story.name : "Martina's"}</title>
         <link rel='icon' href='/favicon.ico' />
-        <meta
-          name='description'
-          content={story.content.seo[0].description || "martina's blog"}
-        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         {!!story.content.seo && !!story.content.seo[0] && (
           <>
+            <meta
+              name='description'
+              content={story.content.seo[0].description || "martina's blog"}
+            />
             {/* Open graph */}
             <meta property='og:locale' content='en_UK' />
             <meta property='og:type' content='website' />

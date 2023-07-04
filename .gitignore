@@ -39,3 +39,6 @@ next-env.d.ts
 # dynamic sitemap
 public/robots.txt
 public/sitemap*.xml
+
+# personal temp notes
+notes.md
